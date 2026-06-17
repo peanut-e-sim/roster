@@ -25,7 +25,15 @@ Open **`index.html`** in a browser. Self-contained (data embedded); the per-rost
 
 ## Accuracy
 
-Extracted by parallel vision agents, then **audited cell-by-cell against the originals** by an independent second pass. Corrections applied: 4 May rosters had a day-1 off-by-one (mis-dated to 2025 — all are 2026), one missed airport code (ICN), one sick-icon mis-typed as training, and airport-standby cells distinguished from home standby. Continuation (no-code) trip cells verified. Residual risk: a stray airport-code misread is possible across 241 legs — each roster has its original-photo toggle for spot-checking.
+Extracted by parallel vision agents, then **every one of the 44 rosters was hand-verified cell-by-cell against its original photo**. Corrections applied:
+
+- 4 May rosters had a day-1 off-by-one (mis-dated to 2025 — all are actually May 2026)
+- 1 missed airport code (ICN), 1 spurious code on a continuation cell (idx 32 d1)
+- 1 sick/mask icon mis-typed as training
+- airport-standby (blue ✓-person) cells distinguished from home standby (idx 17, 11, 41, 43)
+- 19 rest-day variant cells (XXR/XXV/XXM) normalized to the green off-arrow shown in the photos
+
+All airport codes and trip structures confirmed. One borderline cell (idx 15 d30, continuation-vs-off) is visually ambiguous in the source photo. Each roster keeps its **"Original photo"** toggle for independent spot-checking.
 
 ## ⚠️ Privacy
 
